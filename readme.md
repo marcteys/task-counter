@@ -1,4 +1,4 @@
-#Task counter and dataviz
+# Task counter and dataviz
 
 This experimental web app is build to count tasks in order to make nice visualizations. 
 
