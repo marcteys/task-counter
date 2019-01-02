@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin:0;
+  padding: 0;
+}
+body {
+  background: #f1f2f6;
+  font-family: 'Roboto', sans-serif;
+	color:white;
+}
+/*
+form {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+}*/
+h1 {
+  color: #fff;
+}
+.button, #datePicker, .stats {
+	border: 5px transparent solid;
+	  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+margin: 0%;
+float: left;
+text-align: left;
+background-color: #eee;
+transition: all .2s;
+cursor: pointer;
+padding-top: 15px;
+font-size: 20px;
+font-weight: bold;
+position: relative;
+}
+.button span, .stats span {
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.button span em {
+    bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.5;
+
+}
+.button.active {
+	border: 5px rgba(255,255,255, 1) solid;
+box-shadow: 0px 0px 20px  rgba(0,0,0, 0.6);
+}
+.button:focus,.button:active,.button:click  {
+
+}
+
+.progress {
+	width: 100%;
+	position: absolute;
+	width: 0%;
+	display: block;
+	background: rgba(255,255,255,0.4);
+	  animation: expandWidth 5s linear;
+height: 15px;
+bottom: 0;
+}
+
+@keyframes expandWidth {
+   0% { width: 0; }
+   100% { width: 100%; }
+}
+
+.button i ,  .stats i{
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 5px;
+	pointer-events: none;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	opacity:.9;
+	margin-right: 30px;
+	width:50px;
+}
+i.arrow {
+	font-size: 30px;
+	float: right;
+	margin-top:20px;
+	position: absolute;
+	right: 10px;
+	margin-right: 0;
+}
+group + group {
+  margin-top: 20px;
+}
+.inline-radio {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  	z-index:100;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#status {
+	margin-top: 103px;
+	display: block;
+}
+.inline-radio div {
+  position: relative;
+  flex: 1;
+}
+.inline-radio input {
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+   padding: 0;
+  margin: 0;
+}
+.inline-radio label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #bbb;
+  width: 100%;
+  height: 100%;
+  background: #95a5a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+   padding: 0;
+  margin: 0;
+}
+.inline-radio div:last-child label {
+  border-right: 0;
+}
+.inline-radio input:checked + label {
+  background: #fff;
+  font-weight: 500;
+  color: #555;
+}
+
+.table {
+color: black;
+display: inline-block;
+width: 100%;
+margin: 10px 0;
+padding: 10px 0;
+text-align: left;
+}
+
+.table span {
+float: left;
+display: inline-block;
+width: 25%;
+}
+
+.table .remove { 
+float:left;
+padding: 10px 0;
+cursor: pointer;
+width: 20%;
+background-color: red;
+color:white;
+ }
+
+
